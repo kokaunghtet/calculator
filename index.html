@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<h1>Calculator</h1>
+
+		<form action="" method="">
+			
+			<div class="form-group">
+				<label for="firstnumber" class="form-label">First Number</label>
+				<input type="number" name="firstnumber" id="firstnumber" class="form-control" placeholder="Enter first number here" required>
+			</div>
+
+			<div class="form-group">
+				<label for="secondnumber" class="form-label">Second Number</label>
+				<input type="number" name="secondnumber" id="secondnumber" class="form-control" placeholder="Enter second number here" required>
+			</div>
+
+			<div class="form-group">
+				<label for="operator" class="form-label">Operator</label>
+				<select id="operator" class="form-select">
+					<option selected disabled>Choose an operator</option>
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+				</select>
+			</div>
+
+			<small id="error" class="error">Please enter numbers for both boxes!</small>
+			<small id="error2" class="error">Please choose an operator!</small>
+
+			<div class="justify-content-end">
+				<input type="button" name="btn" id="btn" class="btn" value="Calculate">
+				<input type="button" name="clear-btn" id="clear-btn" class="btn" value="Clear"> 
+			</div>
+
+		</form>
+
+		<h3 style="margin: 20px 0 10px 0;float: right;">Result</h3>
+		<div class="result">
+			<div id="result">0</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
