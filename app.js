@@ -46,6 +46,7 @@ clearBtn.addEventListener("click",function(){
 	firstNum.value = "";
 	secNum.value = "";
 	result.innerHTML = "0";
+	operator.value = "default";
 
 	firstNum.focus();
 });
